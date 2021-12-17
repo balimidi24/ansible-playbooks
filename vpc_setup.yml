@@ -3,7 +3,7 @@
   gather_facts: False
   tasks:
     - name: Import VPC Variables
-      incalude_vars: vars/vpc_setup
+      include_vars: vars/vpc_setup
 
     - name: Crate vprofile VPC
       ec2_vpc_net:
@@ -15,4 +15,3 @@
         tenancy: default
         state: "{{state}}"
       register: vpcout
-       
