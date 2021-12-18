@@ -1,7 +1,7 @@
 vpc_name: "ansible-vpc"
 
 # VPC Range
-vpcCide: '172.20.0.0/16'
+vpcCidr: '172.20.0.0/16'
 
 # Subnets Range
 
