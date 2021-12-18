@@ -38,7 +38,7 @@
 
     - name: Creating Bastion Host
       ec2:
-        key_name: vprofile-key
+        key_name: balimidi-key
         region: "{{region}}"
         instance_type: t2.micro
         image: "{{ bastion_ami }}"
@@ -46,7 +46,7 @@
         wait_timeout: 300
         instance_tags:
           Name: "Bastion_host"
-          Project: Vprofile
+          Project: MyProject
           Owner: DevOps Team
         exact_count: 1
         count_tag:
